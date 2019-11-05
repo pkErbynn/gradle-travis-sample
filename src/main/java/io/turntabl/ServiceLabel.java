@@ -1,6 +1,6 @@
 package io.turntabl;
 
-public enum ServiceLevel {
+public enum ServiceLabel {
     GOLD,
     PLATINUM,
     PREMIUM,

@@ -1,32 +1,25 @@
 package io.turntabl;
 
 public class Client {
-    private String name;
-    private int id;
-    ServiceLevel serviceLevel;
-   ClientType clientType;
+    private String clientName;
+    private Integer clientID;
+    private ServiceLabel label;
 
-    public Client(String name, int id, ServiceLevel serviceLevel, ClientType clientType) {
-        this.name = name;
-        this.id = id;
-        this.serviceLevel = serviceLevel;
-        this.clientType = clientType;
+    public Client(String clientName, Integer clientID, ServiceLabel label) {
+        this.clientName = clientName;
+        this.clientID = clientID;
+        this.label = label;
     }
 
-    public ClientType getClientType() {
-        return clientType;
+    public String getClientName() {
+        return clientName;
     }
 
-    public String getName() {
-        return this.name;
+    public Integer getClientID() {
+        return clientID;
     }
 
-    public int getId() {
-        return this.id;
+    public ServiceLabel getLabel() {
+        return label;
     }
-
-    public ServiceLevel getServiceLevel() {
-        return serviceLevel;
-    }
-
 }
