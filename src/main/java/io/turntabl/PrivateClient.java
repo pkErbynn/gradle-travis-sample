@@ -1,8 +1,8 @@
 package io.turntabl;
 
-public class PrivateClient extends Client implements ContactName{
+public class PrivateClient extends Client {
 
-    public PrivateClient(String name, String ID, ServiceLevel serviceLevel, String accountManagerName) {
+    public PrivateClient(String name, String ID, ServiceLevel serviceLevel) {
         super(name, ID, serviceLevel);
     }
 
@@ -11,9 +11,8 @@ public class PrivateClient extends Client implements ContactName{
         return "PrivateClient{}";
     }
 
-
     @Override
-    public String getContactName() {
-        return null;
+    public String getName() {
+        return super.getName();
     }
 }
