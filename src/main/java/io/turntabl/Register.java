@@ -12,4 +12,8 @@ public class Register {
     public List<? extends Client> getClients() {
         return clients;
     }
+
+    public List<String> getNamesOfGoldClients(){
+        return
+    }
 }

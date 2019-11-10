@@ -16,11 +16,11 @@ public class Client {
     }
 
     public String getID() {
-        return ID;
+        return this.ID;
     }
 
     public ServiceLevel getServiceLevel() {
-        return serviceLevel;
+        return this.serviceLevel;
     }
 
     @Override
