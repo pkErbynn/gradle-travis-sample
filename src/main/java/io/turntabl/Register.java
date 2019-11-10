@@ -1,6 +1,7 @@
 package io.turntabl;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Register {
     private List<? extends Client> clients;
@@ -16,7 +17,8 @@ public class Register {
     public List<String> getNamesOfGoldClients(){
         return clients.stream()
                 .filter(c -> c.getServiceLevel().equals(ServiceLevel.GOLD))
-                .map(m -> m.)
+                .map(Client::getName)
+                .collect(Collectors.toList());
     }
 }
 

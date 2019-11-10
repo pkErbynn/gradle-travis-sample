@@ -20,7 +20,7 @@ public class Client {
     }
 
     public ServiceLevel getServiceLevel() {
-        return this.serviceLevel;
+        return serviceLevel;
     }
 
     @Override
