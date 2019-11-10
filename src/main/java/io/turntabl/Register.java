@@ -14,6 +14,9 @@ public class Register {
     }
 
     public List<String> getNamesOfGoldClients(){
-        return
+        return clients.stream()
+                .filter(c -> c.getServiceLevel().equals(ServiceLevel.GOLD))
+                .map(m -> m.)
     }
 }
+
