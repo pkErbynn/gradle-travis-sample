@@ -69,7 +69,7 @@ public class RegisterTest {
                 new Client("bill", "18", ServiceLevel.PREMIUM),
                 new Client("raph", "15", ServiceLevel.GOLD)
         ));
-        assertEquals(9, register.getClients().size());
+        assertEquals(8, register.getClients().size());
     }
 
 
