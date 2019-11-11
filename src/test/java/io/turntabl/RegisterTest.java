@@ -59,7 +59,7 @@ public class RegisterTest {
     }
 
     @Test
-    public void getClients_withSize() {
+    public void sizeOfClientsFieldInRegister_whenNonEmpty() {
         Register register = new Register(Arrays.asList(
                 new CorporateClient("erbynn", "123", ServiceLevel.GOLD, "Milen Milatov"),
                 new Client("pkay", "124", ServiceLevel.PLATINUM),
@@ -72,6 +72,12 @@ public class RegisterTest {
                 new CorporateClient("raph", "15", ServiceLevel.GOLD, "John Erbynn")
         ));
         assertEquals(9, register.getClients().size());
+    }
+
+    @Test
+    public void sizeOfClientsFieldInRegister_whenEmpty() {
+        Register register = new Register(Arrays.asList( ));
+        assertEquals(0, register.getClients().size());
     }
 
 
@@ -112,6 +118,8 @@ public class RegisterTest {
         System.out.println(expected);
         assertEquals(expected,register.countClientAtEveryLevel());
     }
+
+
 
 /*
     @Test
