@@ -23,6 +23,13 @@ public class Register {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public String toString() {
+        return "Register{" +
+                "clients=" + clients +
+                '}';
+    }
+
     public Map<Integer, String> countClientAtEveryLevel() {
         Map<Integer, String> countServiceLevelPair = new HashMap<>();
 
