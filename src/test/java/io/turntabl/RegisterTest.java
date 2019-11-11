@@ -111,10 +111,11 @@ public class RegisterTest {
         assertEquals(expected,register.countClientAtEveryLevel());
     }
 
+/*
     @Test
     public void countClientAtEveryLevel_whenEmpty() {
         Register register = new Register(Arrays.asList( ));
         Map<Integer, String> expected = new HashMap<>();
         assertEquals(expected, register.countClientAtEveryLevel());
-    }
+    }*/
 }
