@@ -111,8 +111,6 @@ public class RegisterTest {
             put(1, "Platinum clients");
             put(1, "Premium clients");
         }};
-
-        System.out.println(expected);
         assertEquals(expected, register.countClientAtEveryLevel());
     }
 
@@ -162,7 +160,7 @@ public class RegisterTest {
 
 
 
-/*
+/*  // TODO: consider making this test pass
     @Test
     public void countClientAtEveryLevel_whenEmpty() {
         Register register = new Register(Arrays.asList( ));
