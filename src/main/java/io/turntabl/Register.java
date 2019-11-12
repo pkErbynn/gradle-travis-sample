@@ -3,6 +3,7 @@ package io.turntabl;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Register {
@@ -50,8 +51,21 @@ public class Register {
         return countServiceLevelPair;
     }
 
+    public List<String> getClientNameUsingID_nonOptional(String id) {
+        List<String> found =  clients.stream()
+                .filter(client -> client.getID().equals(id))
+                .map(Client::getName)
+                .collect(Collectors.toList());
+        return found;
+    }
 
-
+    public Optional<String> getClientNameUsingID_withOptional(String id) {
+        Optional<String> found =  clients.stream()
+                .filter(client -> client.getID().equals(id))
+                .map(Client::getName)
+                .findAny();
+        return found;
+    }
 
 }
 
