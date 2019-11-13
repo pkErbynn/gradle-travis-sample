@@ -104,7 +104,7 @@ public class RegisterTest {
         Register register = new Register(Arrays.asList(
                 new PrivateClient("erbynn", "123", ServiceLevel.GOLD),
                 new PrivateClient("john", "12", ServiceLevel.PLATINUM),
-                new CorporateClient("sam", "125", ServiceLevel.PREMIUM, "Super-dupa cool Managger")
+                new CorporateClient("sam", "125", ServiceLevel.PREMIUM, "Super-duper-cool Manager")
         ));
         Map<Integer, String> expected = new HashMap<Integer, String>() {{
             put(1, "Gold clients");
